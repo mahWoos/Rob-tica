@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboKids - Aprenda Robótica Brincando</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>RoboKids</h1>
+    <nav>
+      <ul>
+        <li><a href="#jogos">Jogos</a></li>
+        <li><a href="#atividades">Atividades</a></li>
+        <li><a href="#desafios">Desafios</a></li>
+        <li><a href="#perfil">Meu Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="jogos" class="content-section">
+      <h2>Jogos de Robótica</h2>
+      <div class="game-container">
+        <p>Monte seu robô arrastando e soltando peças abaixo:</p>
+        <div id="robot-builder">
+          <!-- Área onde o robô será montado -->
+          <div class="dropzone" id="robot-head">Cabeça</div>
+          <div class="dropzone" id="robot-body">Corpo</div>
+          <div class="dropzone" id="robot-legs">Pernas</div>
+        </div>
+        <div class="parts">
+          <img src="467b58b5-0c7b-48c2-87e8-95bccf583398.jpeg" alt="Cabeça do Robô" draggable="true" class="part" id="head-part">
+          <img src="3abbe86e-3f99-40cf-b3ee-b5c120907c62.jpeg" alt="Corpo do Robô" draggable="true" class="part" id="body-part">
+          <img src="749f47e1-c0d9-4662-84fb-fe19d788622c.jpeg" alt="Pernas do Robô" draggable="true" class="part" id="legs-part">
+        </div>
+      </div>
+    </section>
+
+    <section id="atividades" class="content-section">
+      <h2>Atividades Educativas</h2>
+      <p>Aprenda como programar um robô com blocos de código!</p>
+      <div id="code-area">
+        <!-- Aqui você pode integrar uma ferramenta como Blockly -->
+        <button id="run-code">Executar Código</button>
+      </div>
+    </section>
+
+    <section id="desafios" class="content-section">
+      <h2>Desafios Semanais</h2>
+      <p>Complete o desafio desta semana: "Faça seu robô andar 10 passos".</p>
+      <button id="start-challenge">Iniciar Desafio</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 RoboKids. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
